@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Search with Filters and Favorites</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Search Page  -->
+        <div id="search-page" class="main-content">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search for a country..." autocomplete="off">
+                <div id="suggestions-container"></div>
+            </div>
+
+            <!-- Filters -->
+            <div class="filter-container">
+                <label for="language-filter">Filter by Language:</label>
+                <select id="language-filter">
+                    <option value="">Select Language</option>
+                    <option value="english">English</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="french">French</option>
+                    
+                </select>
+
+                <label for="region-filter">Filter by Region:</label>
+                <select id="region-filter">
+                    <option value="">Select Region</option>
+                    <option value="africa">Africa</option>
+                    <option value="americas">Americas</option>
+                    <option value="asia">Asia</option>
+                    <option value="europe">Europe</option>
+                    <option value="oceania">Oceania</option>
+                </select>
+            </div>
+
+            <h1>Countries</h1>
+            <div id="country-list" class="country-list"></div>
+        </div>
+
+        <!-- Favorites  -->
+        <div id="favorites-section" class="favorites-section" style="display: none;">
+            <h2>Your Favorites</h2>
+            <div id="favorites-list" class="favorites-list"></div>
+        </div>
+
+        <!-- Details Page -->
+        <div id="details-page" style="display: none;">
+            <button id="back-btn">Back to Search</button>
+            <div id="country-details"></div>
+            <button id="favorite-btn">❤️ Add to Favorites</button>
+        </div>
+    </div>
+
+    <script src="index.js">
+       
+    </script>
+</body>
+</html>
